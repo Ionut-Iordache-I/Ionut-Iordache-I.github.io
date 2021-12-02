@@ -43,7 +43,8 @@ nav ul {
 
 nav li {
 	display: inline-block;
-	margin: 2em;
+	padding-top: .9em;
+	margin: .1em;
 }
 
 nav a {
@@ -67,6 +68,11 @@ nav a:focus {
 
 	nav {
 		float: right;
+	}
+
+	nav li {
+		display: inline-block;
+		margin: 2em;
 	}
 }
 
@@ -97,7 +103,7 @@ footer::after {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	padding: 12.5em 0;
+	padding: 15.5em 0 12.5em 0;
 	color: rgb(120, 120, 120);
 }
 
@@ -129,7 +135,7 @@ footer::after {
 	padding: 0 .145em;
 }
 
-@media (min-width: 25rem) {
+@media (min-width: 15rem) {
   h1 {
 		font-size: 2rem;
 	}
