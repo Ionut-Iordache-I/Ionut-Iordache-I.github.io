@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WEB RESUME</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+ <body>
+   <section class="section-01-index7">
+   	<div class="container">
+        <div class="section-02-text-index2">
+    			<h1>Simulation of a database (C)</h1>
+            <p> In this project I wanted to implement a database using concepts such as lists and data structures. The database can perform various operations on the tables it contains, such as creating a new table, deleting, or adding a row to a table. It also displays the contents of tables or even the entire database.</p>
+            <p> Database is a way of storing information and data on an external medium (a storage device), with the possibility of easy expansion and retrieval of information quickly.</p>
+            <p> The main structure of the database contains the list of tables and the name of this database. Each table was represented by a structure that contained in
+            addition to the table name, a list of columns, the type of data in the cells,a list of rows and a link to the next table (... more details in the project 
+            implementation, also I added a suggestive picture in this repository).</p>
+            <p> Within the project I chose to use the INIT_DB () function with which I initialized the database. </p>
+            <p> I also needed a function that deletes the database together with its tables, which I named deleteDB (). I created the delete () function that deletes a table from the database after its name received as a parameter. If it does not find the table, it displays an error message.</p>
+            <p> The create () function makes a table with the specified columns. To create the list of columns I allocated the memory and used strtok which had as delimiter "".</p>
+            <p> In order to be able to add a table to the database I used the addTable () function which checks if we have a table in the database. If none exist, the function links the table to the database. If we have other tables, check that the newly added table has not been added and is added. To get a table using its name I created the getTable () function, and to get the index of a column I used the getColumIndex function which I used in a later check of the search () function.</p>
+            <p> To display the entire database I used the printDB () function and to display all the data in a table I used printTable ().</p>
+            <p> Function search () displays the lines for which the value X in the specified column meets the condition (X <relation> <value>) where the relationship can be: “<” “<=” “==” “! = ”“> = ”“> ”. Clear () function performs the deletion of all rows in a table.</p>
+        </div>
+       <br>
+       <br>
+       <br>
+      <a href="index.html" class="button button-01 button-fix">Home</a>
+      <a href="https://github.com/Ionut-Iordache-I/Simulation-of-a-database" class="button button-01 button-fix">Details</a>
+   	</div>
+   </section>
+ </body>
+</html>

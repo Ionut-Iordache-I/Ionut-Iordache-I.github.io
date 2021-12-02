@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WEB RESUME</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+ <body>
+   <section class="section-01-index10">
+   	<div class="container">
+        <div class="section-02-text-index2">
+    			<h1>Command Line Browser (C)</h1>
+    			<p>This program allows the functionality of a minimal web browser. Its functionality is close to that of a classic browser. The browser can create and close tabs and navigate through them and also uses the concepts of stack, queue and double-linked list.
+
+            <p>For the implementation of this project I used the following functions:</p>
+            <p>The initTab() function that initializes a tab for my browser.</p>
+            <p>The insertTab() function that adds a tab to the existing one called browser.</p>
+            <p>The adrAccess() function opens a web page in the current tab, if there is already a web page in that tab it puts it in the back stack.</p>
+            <p>The deleteTab() function deletes the tab from the end of the list and restores the links, also frees the memory from the back and forward stacks and web page in the browser.</p>
+            <p>The print() function displays for each tab a required format if has or does not have a web page inside.</p>
+            <p>The tabChange() function modifies the current tab so that it is the one indicated by the index.</p>
+            <p>The antPage() function takes its web page from the current tab if it exists and puts it in the forward stack, then removes the new web page of the current tab from the back stack.</p>
+            <p>The nextPage() function takes its web page from the current tab if it exists and it sets it in the back stack, then remove the new web page of the current tab from the forward stack.</p>
+            <p>The printHistory() function retrieves the urls it displays from the history queue at the output and also use an auxiliary queue so as not to lose history.</p>
+            <p>The del_G_history() function deletes the first or most accessed nr_entries(number of entries) from the global history if nr_entries is 0 or a number greater than the number of total history entries.</p>
+            <p>The listDl() function displays at the output the resources on the current page that can be downloaded.</p>
+            <p>The downloadResource() function adds a resource to the function's downloads queue of dimension remaining to download the resource.</p>
+            <p>The wait() function has a case where the download of a resource could not be completed completely in which case I put it in the backUp queue.Other situation can also be the one when the download was done completely and the resource was put in the finished queue. After this checks I concatenated the backUp queue on finished one.</p>
+            <p>The printDownloads() function displays the download history in the browser.</p>
+            <p>The destroyBrowser() function frees the memory allocated for tabs as well as browser (= initial tab).</p>
+            <p>The stay() function returns the remaining size for download from a resource.</p>
+            <p>The destroyPageStack() function frees memory for a stack of web pages.</p>
+            <p>The destroyHistory() function frees the memory for the queue in which we have kept the global history.</p>
+            <p>In int main() function I initialized the queue representing the browser history as well as the one intended for downloads and I declared the browser variable that represents the tab initially to which I added the following tabs depending on the command stored in cmd, otherwise I said I used the browser tab as a sentry.</p>
+            <p>As for the stack and queue functions, I modified them using the simply chained generic lists.</p>
+        </div>
+       <br>
+       <br>
+       <br>
+      <a href="index.html" class="button button-01 button-fix">Home</a>
+      <a href="https://github.com/Ionut-Iordache-I/Command-Line-Browser" class="button button-01 button-fix">Details</a>
+   	</div>
+   </section>
+ </body>
+</html>
